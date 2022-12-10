@@ -1,0 +1,52 @@
+.sales {
+    margin-top: 50px;
+    position: relative;
+    overflow: hidden;
+    padding: 0 20px;
+    &__body {
+        width: 100%;
+        overflow: hidden;
+    }
+    &__list {
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        padding: 10px 0px;
+        transition: all 1s ease;
+    }
+    &__btn {
+        position: absolute;
+        top: 50%;
+        transform: scale(1);
+        &:hover {
+            &::before {
+                border-top: 3px solid rgba(255, 255, 255, 0.7);
+                border-left: 3px solid rgba(255, 255, 255, 0.7);
+            }
+        }
+        &::before {
+            content: '';
+            border-top: 3px solid #fff;
+            border-left: 3px solid #fff;
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 4;
+            transition: all .3s ease;
+        }
+        &.btn__prev {
+            left: 5px;
+            &::before {
+                transform: rotate(-45deg);
+            }
+        }
+        &.btn__next {
+           right: 24px;
+           &::before {
+               transform: rotate(135deg);
+           }
+        }
+    }
+}

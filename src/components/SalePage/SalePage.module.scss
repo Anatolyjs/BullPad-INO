@@ -1,0 +1,80 @@
+.salePage {
+    &__body {
+        max-width: 900px;
+        width: 100%;
+        min-height: 450px;
+        border-radius: 10px;
+        margin: 150px auto 0;
+        box-shadow: 0 0 15px rgba(255,255,255, 1);
+        background-color: #000;
+        display: flex;
+    }
+    &__image {
+        min-width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 50%;
+        }
+    }
+    &__description {
+        min-width: 50%;
+        text-align: center;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__social {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    &__item {
+        margin: 0 5px;
+        i {
+            font-size: 30px;
+            color: #fff;
+        }
+    }
+    &__name {
+        font-size: 35px;
+    }
+    &__minted, &__price {
+        margin-top: 10px;
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 22px;
+    }
+    &__btn {
+        margin-top: 30px;
+        padding: 10px 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        font-size: 20px;
+        text-transform: uppercase;
+        transition: all .3s ease;
+        width: 120px;
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.6);
+        }
+    }
+    @media (max-width: 768px) {
+        &__body {
+            min-height: 350px;
+        }
+        &__name {
+            font-size: 25px;
+        }
+        &__minted, &__price {
+            font-size: 17px;
+        }
+    }
+    @media (max-width: 576px) {
+        &__body {
+            flex-direction: column;
+            padding: 20px;
+            margin: 100px auto 0;
+        }
+    }
+}
