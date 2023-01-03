@@ -6,7 +6,7 @@ Currently this is a just a test app with fake data. Soon it will be full-fledged
 
 User technologies: React, Redux, React-hook-form, React-router-dom, React-redux, redux-thunk, HTML, SASS(SCSS), JavaScript.
 
-Currently app is installed on the server, but hosting isn't connected.
+Currently app is installed on the hosting, but domain name isn't connected.
 
 Link: http://38.242.227.102/
 
